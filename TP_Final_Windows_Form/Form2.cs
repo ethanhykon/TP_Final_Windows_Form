@@ -14,16 +14,17 @@ namespace TP_Final_Windows_Form
 {
     public partial class Form2 : Form
     {
-        string dbconn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\hykonenclub\\source\\repos\\TP_Final_Windows_Form\\TP_Final_Windows_Form\\Database1.mdf;Integrated Security=True";
+        string dbconn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\repos\\TP_Final_Windows_Form\\Database1.mdf;Integrated Security=True";
         DataGridView DGV;
         public Form2(DataGridView DGV)
         {
-            InitializeComponent();
+            InitializeComponent(); 
             this.DGV = DGV;
+           // ajout des paramètre des combo box  numération
             this.num_prix.DecimalPlaces = 2; 
-            this.num_prix.Increment = 0.01M;
+            this.num_prix.Increment = 0.01M;  
             this.num_prix.Minimum = 0.00M;   
-            this.num_prix.Maximum = 999999999.99M; 
+            this.num_prix.Maximum = 999999999.99M;  
             
             this.combo_genre.Items.AddRange(new object[] { "FPS", "TPS", "RPG", "GACHA", "Visual novel", "Jeux de platformes" });
             this.combo_dispo.Items.AddRange(new object[] { "Disponible", "Prêté", "Vendu"});
@@ -82,14 +83,6 @@ namespace TP_Final_Windows_Form
             
      }
 
-        private void dtp_date_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void lbl_prix_Click(object sender, EventArgs e)
-        {
-
-        }
+    
     }
 }

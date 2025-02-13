@@ -69,7 +69,7 @@
             lbl_prix.Size = new Size(56, 20);
             lbl_prix.TabIndex = 2;
             lbl_prix.Text = "prix (€)";
-            lbl_prix.Click += lbl_prix_Click;
+            
             // 
             // txt_nom
             // 
@@ -94,7 +94,7 @@
             dtp_date.Name = "dtp_date";
             dtp_date.Size = new Size(254, 27);
             dtp_date.TabIndex = 7;
-            dtp_date.ValueChanged += dtp_date_ValueChanged;
+           
             // 
             // combo_dispo
             // 

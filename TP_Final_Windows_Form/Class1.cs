@@ -14,7 +14,7 @@ namespace TP_Final_Windows_Form
         {
 
             
-                string stringconnection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\hykonenclub\\source\\repos\\TP_Final_Windows_Form\\TP_Final_Windows_Form\\Database1.mdf;Integrated Security=True";
+                string stringconnection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\repos\\TP_Final_Windows_Form\\Database1.mdf;Integrated Security=True";
                 using (SqlConnection conn = new SqlConnection(stringconnection))
                 {
                     // ouverture de la connexion
