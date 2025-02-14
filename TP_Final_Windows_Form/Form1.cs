@@ -7,7 +7,7 @@ namespace TP_Final_Windows_Form
 
     public partial class Form1 : Form
     {
-        string stringconnection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\repos\\TP_Final_Windows_Form\\Database1.mdf;Integrated Security=True";
+        string stringconnection = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\hykonenclub\\source\\repos\\TP_Final_Windows_Form\\TP_Final_Windows_Form\\Database1.mdf;Integrated Security=True";
         public Form1()
         {
             InitializeComponent();
@@ -97,7 +97,12 @@ namespace TP_Final_Windows_Form
             {
                 DataGridViewRow row = DGV_main.Rows[e.RowIndex];
                  string id = row.Cells["ID"].Value.ToString();
-                 Form3 newform = new Form3(id, DGV_main); 
+                string txt_nom = row.Cells["Nom"].Value.ToString();
+                
+                string DT_sortie = row.Cells["date_de_sortie"].Value.ToString();
+                string enum_prix = row.Cells["Prix_en_euros"].Value.ToString();
+                
+                Form3 newform = new Form3(id, txt_nom, DT_sortie, enum_prix,  DGV_main); 
 
                  newform.Show();
 

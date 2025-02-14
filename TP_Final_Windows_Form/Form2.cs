@@ -14,7 +14,7 @@ namespace TP_Final_Windows_Form
 {
     public partial class Form2 : Form
     {
-        string dbconn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=E:\\repos\\TP_Final_Windows_Form\\Database1.mdf;Integrated Security=True";
+        string dbconn = "Data Source=(LocalDB)\\MSSQLLocalDB;AttachDbFilename=C:\\Users\\hykonenclub\\source\\repos\\TP_Final_Windows_Form\\TP_Final_Windows_Form\\Database1.mdf;Integrated Security=True";
         DataGridView DGV;
         public Form2(DataGridView DGV)
         {
@@ -36,7 +36,7 @@ namespace TP_Final_Windows_Form
             string release = this.dtp_date.Value.ToString("dd-MM-yyyy");
                 string genre = this.combo_genre.Text;
                 string dispo = this.combo_dispo.Text;
-                string nom = this.txt_nom.Text;
+                string nom = this.txt_nom.Text.Trim();
                 decimal pr = this.num_prix.Value;
                 string prix = pr.ToString();
                 
